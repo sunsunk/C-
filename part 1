@@ -1,0 +1,59 @@
+前言部分
+
+C语言源程序后缀为.c（C++的后缀为.cpp
+开发环境：GNU的c/c++编译器
+UNIX/Linux上的安装：检查  gcc -v    安装介绍：http://gcc.gnu.org/install/   手册说明
+MacOS:Xcode
+windows:安装集成开发环境visual studio
+
+C程序结构
+1 预处理指令
+2 函数
+3 变量
+4 语句&表达式
+5 代码注释
+
+example:
+
+#include<stdio.h>
+
+int main(void)
+{
+		/*我的第一个C程序*/
+		printf("Hello World!\n");
+		return 0;
+}
+程序的第一行 #include 是预处理器指令，告诉 C 编译器在实际编译之前要包含 stdio.h 文件。
+下一行 int main() 是主函数，程序从这里开始执行。
+下一行 /.../ 将会被编译器忽略，这里放置程序的注释内容。它们被称为程序的注释。
+下一行 printf(...) 是 C 中另一个可用的函数，会在屏幕上显示消息 "Hello, World!"。
+下一行 return 0; 终止 main() 函数，并返回值 0。
+
+C语言注释方式有"//"  "/*  */"
+C语言代码行结束标志为分号（;）
+C语言标识符：A-Z a-z开头；或者下划线“_name”方式；标识符中不允许出现标点符号，且避免关键字。
+C保留的关键字如下所示：
+
+auto  if  else  for  while   do  switch  break  enum  register  typedef
+break case  extern  return  union  char  float  double short  int long signed unsigned
+const  goto  sizeof  volatile  default  static  struct  _Packe 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tips:编译过程（将文件保存为hello.c）
+$ gcc hello.c
+$ ./a.out
